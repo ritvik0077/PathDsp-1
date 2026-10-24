@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-path-slate: #2f4454;
+  --color-path-wine: #2e151b;
+  --color-path-rose: #da7b93;
+  --color-path-teal: #376e6f;
+  --color-path-deep: #1c3334;
+  --color-path-ivory: #f4f0eb;
+  --color-path-muted: #a8b1b5;
+  --color-path-ink: #080b0e;
+  --font-sans: Arial, "Helvetica Neue", sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  background: #2f4454;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html { scroll-behavior: smooth; }
+body { min-width: 320px; margin: 0; }
+button, a, select { -webkit-tap-highlight-color: transparent; }
+::selection { color: #080b0e; background: #da7b93; }
+.hero-grid {
+  background-image: linear-gradient(rgba(244,240,235,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(244,240,235,.12) 1px,transparent 1px);
+  background-size: 108px 108px;
+  mask-image: linear-gradient(90deg,transparent,black 42%,black 85%,transparent);
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
